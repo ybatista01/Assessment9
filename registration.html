@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Volunteer Event</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="registration.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Register for an Account</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invitation.html">Invitation</a></li>
+            <li><a href="volunteer.html">Volunteers</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="registration.html" class="active">Registration</a></li>
+        </ul>
+    </nav>
+
+    <form id="registrationForm" action="confirmation.php" method="POST" novalidate>
+        <div>
+            <label for="username">Username*:</label>
+            <input type="text" id="username" name="username">
+            <span class="error" id="usernameError"></span>
+        </div>
+        <div>
+            <label for="password">Password*:</label>
+            <input type="password" id="password" name="password">
+            <span class="error" id="passwordError"></span>
+        </div>
+        <div>
+            <label for="passwordVerify">Verify Password*:</label>
+            <input type="password" id="passwordVerify" name="passwordVerify">
+            <span class="error" id="passwordVerifyError"></span>
+        </div>
+        <div>
+            <label for="firstName">First Name*:</label>
+            <input type="text" id="firstName" name="firstName">
+            <span class="error" id="firstNameError"></span>
+        </div>
+        <div>
+            <label for="lastName">Last Name*:</label>
+            <input type="text" id="lastName" name="lastName">
+            <span class="error" id="lastNameError"></span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span class="error" id="emailError"></span>
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(xxx) xxx-xxxx">
+            <span class="error" id="phoneNumberError"></span>
+        </div>
+        <div>
+            <label>Sign Up for Newsletter:</label>
+            <input type="radio" id="newsletterYes" name="signupNewsletter" value="yes"> Yes
+            <input type="radio" id="newsletterNo" name="signupNewsletter" value="no"> No
+        </div>
+        <div>
+            <button type="submit" id="submitButton">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>© 2024 Volunteer Event | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
